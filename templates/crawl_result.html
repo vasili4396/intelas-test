@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load nested_list %}
+
+{% block content %}
+    <div style="padding: 16px">
+        <h1>
+            <span>Crawl result for</span>
+            <a href="{{ url }}" rel="noopener" target="_blank">{{ url }}</a>
+        </h1>
+        {% render_dict links %}
+    </div>
+{% endblock %}

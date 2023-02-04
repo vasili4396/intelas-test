@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  backend:
+    container_name: intelas-crawler
+    build:
+      context: .
+    volumes:
+      - .:/opt/intelas
+    ports:
+      - "8023:8000"
+    stdin_open: true
+    tty: true
